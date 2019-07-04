@@ -1,0 +1,29 @@
+{
+	"name": "trigger-colgate",
+	"properties": {
+		"annotations": [
+			"NielsonAOD"
+		],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "nn_ingestion_master_pl",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"batchId": "@triggerBody().fileNames",
+					"endFilePath": "@triggerBody().folderPath"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/barilla/blobs/staging_endfile/",
+			"scope": "/subscriptions/1824bc1e-b99a-4dab-9a84-b0d5f05f83c7/resourceGroups/azu-eus2-dev-rg-IngestNielsenAOD/providers/Microsoft.Storage/storageAccounts/azueus2devsaingestaod",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
