@@ -19,7 +19,7 @@
 		],
 		"type": "BlobEventsTrigger",
 		"typeProperties": {
-			"blobPathBeginsWith": "/barilla/blobs/staging_endfile/",
+			"blobPathBeginsWith": "/colgate/blobs/staging_endfile/",
 			"scope": "/subscriptions/1824bc1e-b99a-4dab-9a84-b0d5f05f83c7/resourceGroups/azu-eus2-dev-rg-IngestNielsenAOD/providers/Microsoft.Storage/storageAccounts/azueus2devsaingestaod",
 			"events": [
 				"Microsoft.Storage.BlobCreated"
