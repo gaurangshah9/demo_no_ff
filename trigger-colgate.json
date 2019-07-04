@@ -12,7 +12,7 @@
 					"type": "PipelineReference"
 				},
 				"parameters": {
-					"batchId": "@triggerBody().fileNames",
+					"batchId": "@triggerBody().fileName",
 					"endFilePath": "@triggerBody().folderPath"
 				}
 			}
