@@ -4,7 +4,7 @@
 		"annotations": [
 			"NielsonAOD"
 		],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"pipelines": [
 			{
 				"pipelineReference": {
