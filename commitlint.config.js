@@ -1,1 +1,4 @@
-module.exports = {extends: ['@commitlint/config-conventional']}
+module.exports = {
+  plugins: ['commitlint-plugin-jira-rules'],
+  extends: ['jira'],
+}
