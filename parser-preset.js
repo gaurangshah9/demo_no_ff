@@ -1,6 +1,6 @@
 module.exports = {
     parserOpts: {
-        headerPattern: /^(\w*)-(\w*)/,
-        headerCorrespondence: ['type', 'scope', 'ticket', 'subject']
+        headerPattern: /^(\w*): (\w*) (\w*)/,
+        headerCorrespondence: ['ticket','type', 'subject']
     }
 };
