@@ -1,6 +1,6 @@
 module.exports = {
     parserOpts: {
-        headerPattern: /^(\w*): (\w*) (\w*)/,
+        headerPattern: /^(DPMA-\d{2,4}): (\w*) (\w*)/,
         headerCorrespondence: ['ticket','type', 'subject']
     }
 };
