@@ -1,3 +1,1 @@
-module.exports = {
-    parserPreset: './parser-preset'
-}
+module.exports = {extends: ['@commitlint/config-conventional']}
