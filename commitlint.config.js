@@ -2,10 +2,10 @@ module.exports = {
     extends: ['@commitlint/config-conventional'],
     parserPreset: {
            parserOpts: {
-              headerPattern: /^[A-Z]{2,4}-[0-9]{2,4}: (\w*)\((\w*)\): (.*)$/,
+              headerPattern: /^[A-Z]{1,4}-[0-9]{1,4}: (\w*)\((\w*)\): (.*)$/,
               headerCorrespondence: ["type", "scope", "subject"],
-              issuePrefixes: ["^[A-Z]{2,4}-[0-9]{2,4}"],
-              referenceActions: ["xxx-"] // (!!)
+              issuePrefixes: ["^[A-Z]{1,4}-[0-9]{1,4}"],
+              referenceActions: ["xx-"] // (!!)
             }
       },
     rules: {
